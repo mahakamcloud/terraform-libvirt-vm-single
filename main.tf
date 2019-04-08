@@ -25,7 +25,7 @@ resource "libvirt_domain" "vm_domain" {
   cloudinit = "${libvirt_cloudinit_disk.vm_init.id}"
 
   network_interface {
-    bridge         = "${var.private_network_bridge}"
+    network_name   = "${var.network_name}"
     hostname       = "${var.instance_name}"
     mac            = "${var.mac_address}"
     wait_for_lease = false

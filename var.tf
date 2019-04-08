@@ -52,10 +52,9 @@ variable num_network_interface {
   description = "number of network interfaces which VM has"
 }
 
-variable private_network_bridge {
+variable network_name {
   type = "string"
-  default = "virbr0"
-  description = "existing network bridge on host that VM needs to connect to private network"
+  description = "Libvirt network name"
 }
 
 variable user_data {
