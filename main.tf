@@ -7,7 +7,7 @@ resource "libvirt_volume" "main" {
 
 resource "libvirt_volume" "secondary" {
   name   = "${var.instance_name}-secondary"
-  size   = "${var.disk_two_size_gb * 1024 * 1024 * 1024 }"
+  size   = "${var.secondary_disk_size_gb * 1024 * 1024 * 1024 }"
 }
 
 resource "libvirt_cloudinit_disk" "vm_init" {

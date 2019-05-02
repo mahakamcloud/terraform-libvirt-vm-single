@@ -84,7 +84,7 @@ variable dns_dhcp_server_username {
   description = "dhcp and dns server ssh username"
 }
 
-variable disk_two_size_gb {
+variable secondary_disk_size_gb {
   default = "1"
   type = "string"
   description = "Size of secondary disk"
